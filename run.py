@@ -147,13 +147,13 @@ class PredictionModel(object):
         self.snp_annot = get_input_path_RDS (self.snp_annot_path, self.snp_annotation_input_data_dir, self.snp_annot)
 
         # project INFO 
-        # self.project_time = datetime.now().strftime('%Y-%m-%d') 
-        self.project_time = '2017-06-19'
+        self.project_time = datetime.now().strftime('%Y-%m-%d') 
+        # self.project_time = '2017-06-19'
         self.hour = datetime.now().strftime('%H') 
         self.minute = datetime.now().strftime('%M') 
         self.second = datetime.now().strftime('%S') 
-        # self.project_id = str(myuuid.uuid4())
-        self.project_id = '5e556ffe-2315-40e8-9d88-11f2e61715cb'
+        self.project_id = str(myuuid.uuid4())
+        # self.project_id = '5e556ffe-2315-40e8-9d88-11f2e61715cb'
         self.project = self.project_name + '_' + self.gene_type + '_alpha-' + self.alpha + '_snpset-' + self.snpset + '_window-' + self.window + '_cv-folds-' + self.n_k_folds +'_fdr-' + self.fdr_level + '_' + self.project_id + '_' + self.project_time
 
     def start_logs(self):
