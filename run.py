@@ -9,7 +9,9 @@
 # --expression_path ../input_mirna/expression_phenotypes/miRNA_CTR_Exp.RDS \
 # --genotype_path ../input_mirna/genotype/ \
 # --gene_annot_path ../input_mirna/gene_annotation/miRBase_miRNA_gene_annotation.RDS \
-# --snp_annot_path ../input_mirna/snp_annotation/gEUVADIS.SNP.annotation.RDS
+# --snp_annot_path ../input_mirna/snp_annotation/geuvadis_anno_transform.RDS \
+# --intermediate_path ../input_mirna/intermediate/
+
 
 # proteomics usage -------------------------
 # ./run.py \
@@ -88,7 +90,7 @@ class PredictionModel(object):
         # parser.add_argument('-n', '--numberof_genotype_files', required=True, default=None, type=str, help='The number of genotype files, e.g. 1, 22')
 
         # not required but has default values. Please include them if you would like to modify the default settings 
-        parser.add_argument('-c', '--n_k_folds', required=False, default='10', type=str, help='the number of folds for cross-validation, e.g. 10')
+        parser.add_argument('-n', '--n_k_folds', required=False, default='10', type=str, help='the number of folds for cross-validation, e.g. 10')
         parser.add_argument('-f', '--fdr_level', required=False, default='0.05', type=str, help='fdr used for model filtering, e.g. 0.05')
         parser.add_argument('-w', '--window', required=False, default='1e6', type=str, help='the number of bps to +/- TSS')
 
@@ -212,7 +214,7 @@ class PredictionModel(object):
 
         # create a folder for outputs  
         if len(self.output_path) != 0:                               # use user provided input file paths 
-            self.output_data_dir = self.input_path + self.project + '/'  
+            self.output_data_dir = self.output_path + self.project + '/'  
         else: 
             self.output_data_dir = self.output_data_dir + self.project + '/'
         os.system("mkdir " + self.output_data_dir)
