@@ -4,18 +4,18 @@
 + A pipeline is used to build microRNA gene expression prediction models  
 
 ## Requirements 
-[Python2.7](http://www.python.org/download/)
-[R 3.0+](http://www.r-project.org/)
-[data.table](https://github.com/Rdatatable/data.table)
-[glmnet](https://cran.r-project.org/web/packages/glmnet/index.html)
-[qvalue](http://bioconductor.org/packages/release/bioc/html/qvalue.html)
-[dplyr](https://github.com/tidyverse/dplyr)
-[bit64](https://cran.r-project.org/web/packages/bit64/index.html)
-[doMC](https://cran.r-project.org/web/packages/doMC/index.html)
+*[Python2.7](http://www.python.org/download/)
+*[R 3.0+](http://www.r-project.org/)
+*[data.table](https://github.com/Rdatatable/data.table)
+*[glmnet](https://cran.r-project.org/web/packages/glmnet/index.html)
+*[qvalue](http://bioconductor.org/packages/release/bioc/html/qvalue.html)
+*[dplyr](https://github.com/tidyverse/dplyr)
+*[bit64](https://cran.r-project.org/web/packages/bit64/index.html)
+*[doMC](https://cran.r-project.org/web/packages/doMC/index.html)
 
 ## Installing Pipeline 
 ```bash
-	git clone https://github.com/jiamaozheng/microRNA_gene_expression_prediction_model_pipeline
+git clone https://github.com/jiamaozheng/microRNA_gene_expression_prediction_model_pipeline
 ```   
 
 ## Supported Input File Formats 
