@@ -4,14 +4,14 @@
 + A pipeline is used to build microRNA gene expression prediction models  
 
 ## Requirements 
-*[Python2.7](http://www.python.org/download/)
-*[R 3.0+](http://www.r-project.org/)
-*[data.table](https://github.com/Rdatatable/data.table)
-*[glmnet](https://cran.r-project.org/web/packages/glmnet/index.html)
-*[qvalue](http://bioconductor.org/packages/release/bioc/html/qvalue.html)
-*[dplyr](https://github.com/tidyverse/dplyr)
-*[bit64](https://cran.r-project.org/web/packages/bit64/index.html)
-*[doMC](https://cran.r-project.org/web/packages/doMC/index.html)
+1. [Python2.7](http://www.python.org/download/)
+2. [R 3.0+](http://www.r-project.org/)
+3. [data.table](https://github.com/Rdatatable/data.table)
+4. [glmnet](https://cran.r-project.org/web/packages/glmnet/index.html)
+5. [qvalue](http://bioconductor.org/packages/release/bioc/html/qvalue.html)
+6. [dplyr](https://github.com/tidyverse/dplyr)
+7. [bit64](https://cran.r-project.org/web/packages/bit64/index.html)
+8. [doMC](https://cran.r-project.org/web/packages/doMC/index.html)
 
 ## Installing Pipeline 
 ```bash
