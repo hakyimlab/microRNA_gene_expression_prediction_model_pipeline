@@ -19,10 +19,10 @@
 ```   
 
 ## Supported Input File Formats 
-+ [expression file - miRNA_CTR_Exp.RDS]()
-+ [expression annotation file - miRBase_miRNA_gene_annotation.RDS]()
-+ [genotype file - geuvadis_snps.txt ]()
-+ [SNP annotation file - gEUVADIS.SNP.annotation.RDS]()
++ [expression file - miRNA_CTR_Exp.RDS](https://s3.amazonaws.com/imlab-jiamaoz/shared/gene_expression_sample.txt)
++ [expression annotation file - miRBase_miRNA_gene_annotation.RDS](https://s3.amazonaws.com/imlab-jiamaoz/shared/gene_annotation_sample.txt)
++ [genotype file - geuvadis_snps.txt ](https://s3.amazonaws.com/imlab-jiamaoz/shared/genotype_sample.txt)
++ [SNP annotation file - gEUVADIS.SNP.annotation.RDS](https://s3.amazonaws.com/imlab-jiamaoz/shared/snp_annotation_sample.txt)
 
 
 ## Command Line Parameters 
