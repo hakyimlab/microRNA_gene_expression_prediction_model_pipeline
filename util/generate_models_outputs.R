@@ -1,4 +1,3 @@
-# Author = 'Jiamao Zheng <jiamaoz@yahoo.com>'
 
 # generate model
 generate_models <- function(expression, genotype, gene_annot, snp_annot,
@@ -150,6 +149,7 @@ write_covariance <- function(gene, cisgenos, model_rsids, model_varIDs, covarian
 }
 
 # generate outputs
+# Author = 'Jiamao Zheng <jiamaoz@yahoo.com>'
 generate_outputs <- function(project, gene_annot, n_samples, n_k_folds, alpha, snpset, fdr_level, gene_type, intermediate_out_dir, output_data_dir) {
   # filter what target you are interested
   gene_annot <- gene_annot %>% filter(gene_type == gene_type)
